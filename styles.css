@@ -85,3 +85,24 @@ nav a:focus {
     background-color: #24292f; /* Mantém o fundo escuro */
     color: white; /* Mantém o texto branco */
 }
+
+/* Botão Voltar ao Topo */
+#btnTopo {
+    position: fixed; /* Fixa na tela */
+    bottom: 20px; /* Distância da parte inferior */
+    right: 20px; /* Distância da parte direita */
+    z-index: 99; /* Aparece acima de outros elementos */
+    background-color: #24292f; /* Fundo escuro */
+    color: white; /* Texto branco */
+    border: none; /* Sem borda */
+    border-radius: 50%; /* Forma circular */
+    padding: 10px 15px; /* Tamanho do botão */
+    font-size: 20px; /* Tamanho da seta */
+    display: none; /* Escondido por padrão */
+    cursor: pointer; /* Mostra que é clicável */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra leve */
+}
+
+#btnTopo:hover {
+    background-color: #444; /* Fica um pouco mais claro ao passar o mouse */
+}
