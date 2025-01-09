@@ -1,6 +1,6 @@
 /* Estilos Globais */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Segoe UI", Arial, sans-serif;
     background-color: #f6f8fa; /* Fundo claro */
     color: #24292f; /* Texto escuro */
     margin: 0;
@@ -21,6 +21,16 @@ header {
     min-height: 300px; /* Altura mínima */
 }
 
+/* Links */
+a {
+    color: inherit; /* Usa a cor do texto atual */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 /* Menu de Navegação */
 nav a {
     color: white !important;
@@ -28,7 +38,21 @@ nav a {
 }
 
 nav a:hover {
-    color: #58a6ff !important; /* Azul do GitHub */
+    color: #58a6ff !important; /* Azul claro do GitHub */
+}
+
+.dropdown-menu {
+    background-color: white; /* Fundo branco para contraste */
+    border: 1px solid #ccc;
+}
+
+.dropdown-item {
+    color: #24292f; /* Cor do texto escuro */
+}
+
+.dropdown-item:hover {
+    background-color: #f6f8fa; /* Fundo claro no hover */
+    color: #0366d6; /* Azul GitHub no hover */
 }
 
 /* Seções */
