@@ -1,118 +1,89 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
+    <title>Il Mio Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f6f8fa; /* Fundo claro do GitHub */
-            color: #24292f; /* Texto escuro do GitHub */
-        }
-        header {
-            background-color: #24292f; /* Fundo do cabeçalho */
-            color: white;
-            text-align: center;
-            padding: 50px 0;
-        }
-        header h1 {
-            font-size: 3rem;
-        }
-        nav {
-            background-color: #24292f; /* Fundo do menu */
-        }
-        nav a {
-            color: white !important;
-            text-decoration: none;
-            margin-right: 15px;
-        }
-        nav a:hover {
-            color: #58a6ff !important; /* Azul do GitHub */
-        }
-        footer {
-            background-color: #24292f;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 50px;
-        }
-        section {
-            margin-bottom: 50px;
-        }
-        .smooth-scroll {
-            scroll-behavior: smooth;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="smooth-scroll">
-    <!-- Menu de Navegação -->
+    <!-- Menu di Navigazione -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand text-white" href="#">Meu Portfólio</a>
+            <a class="navbar-brand text-white" href="#">Il Mio Portfolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Mim</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#implementacoes">Implementações</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#su-di-me" data-lang="Su di me">Su di me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#implementazioni" data-lang="Implementazioni">Implementazioni</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contatti" data-lang="Contatti">Contatti</a></li>
                 </ul>
+                <div class="dropdown ms-3">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        Lingua
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('it')">Italiano</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('pt-br')">Português do Brasil</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
 
-    <!-- Cabeçalho -->
+    <!-- Intestazione -->
     <header>
-        <h1>Meu Portfólio</h1>
-        <p>Bem-vindo ao meu espaço profissional</p>
+        <h1 data-lang="Il Mio Portfolio">Il Mio Portfolio</h1>
+        <p data-lang="Benvenuto nel mio spazio professionale">Benvenuto nel mio spazio professionale</p>
     </header>
 
     <main class="container my-5">
-        <!-- Sobre Mim -->
-        <section id="sobre">
-            <h2 class="text-center">Sobre Mim</h2>
-            <p class="text-center">Aqui você pode contar sua trajetória profissional e seus objetivos.</p>
+        <!-- Su di me -->
+        <section id="su-di-me">
+            <h2 class="text-center" data-lang="Su di me">Su di me</h2>
+            <p class="text-center" data-lang="Qui puoi raccontare la tua carriera professionale e i tuoi obiettivi.">Qui puoi raccontare la tua carriera professionale e i tuoi obiettivi.</p>
         </section>
 
-        <!-- Implementações -->
-        <section id="implementacoes">
-            <h2 class="text-center">Minhas Implementações</h2>
+        <!-- Implementazioni -->
+        <section id="implementazioni">
+            <h2 class="text-center" data-lang="Le mie Implementazioni">Le mie Implementazioni</h2>
             <div class="row">
                 <div class="col-md-6">
                     <div class="card mb-4">
                         <div class="card-body">
-                            <h5 class="card-title">Projeto 1</h5>
-                            <p class="card-text">Descrição breve do projeto.</p>
-                            <a href="#" class="btn btn-primary">Ver Mais</a>
+                            <h5 class="card-title" data-lang="Progetto 1">Progetto 1</h5>
+                            <p class="card-text" data-lang="Breve descrizione del progetto.">Breve descrizione del progetto.</p>
+                            <a href="#" class="btn btn-primary" data-lang="Scopri di più">Scopri di più</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="card mb-4">
                         <div class="card-body">
-                            <h5 class="card-title">Projeto 2</h5>
-                            <p class="card-text">Descrição breve do projeto.</p>
-                            <a href="#" class="btn btn-primary">Ver Mais</a>
+                            <h5 class="card-title" data-lang="Progetto 2">Progetto 2</h5>
+                            <p class="card-text" data-lang="Breve descrizione del progetto.">Breve descrizione del progetto.</p>
+                            <a href="#" class="btn btn-primary" data-lang="Scopri di più">Scopri di più</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contato -->
-        <section id="contato" class="text-center">
-            <h2>Contato</h2>
-            <p>Entre em contato por <a href="mailto:seu-email@example.com">e-mail</a> ou visite meu <a href="#">LinkedIn</a>.</p>
+        <!-- Contatti -->
+        <section id="contatti" class="text-center">
+            <h2 data-lang="Contatti">Contatti</h2>
+            <p data-lang="Contattami via e-mail o visita il mio LinkedIn.">Contattami via <a href="mailto:seu-email@example.com">e-mail</a> o visita il mio <a href="#">LinkedIn</a>.</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Seu Nome. Todos os direitos reservados.</p>
+        <p data-lang="Tutti i diritti riservati.">&copy; 2025 Il tuo Nome. Tutti i diritti riservati.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
