@@ -1,16 +1,16 @@
 /* Estilos Globais */
 body {
     font-family: "Segoe UI", Arial, sans-serif;
-    background-color: #f6f8fa;
-    color: #24292f;
+    background-color: #f6f8fa; /* Fundo claro */
+    color: #24292f; /* Texto escuro */
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* Rolar suavemente */
 }
 
 /* Header */
 header {
-    background-color: #24292f;
+    background-color: #24292f; /* Fundo escuro */
     color: white;
     text-align: center;
     padding: 50px 0;
@@ -18,60 +18,74 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 300px;
+    min-height: 300px; /* Altura mínima */
 }
 
-/* Menu de Navegação */
-.navbar .nav-link {
-    color: white;
+/* Links */
+a {
+    color: inherit; /* Usa a cor do texto atual */
     text-decoration: none;
 }
 
-.navbar .nav-link:hover {
-    color: #58a6ff;
+a:hover {
+    text-decoration: none; /* Sem sublinhado no hover */
 }
 
-/* Dropdown dentro do menu */
-.navbar .dropdown-toggle {
-    background-color: transparent;
-    color: white;
-    border: none;
-    text-align: left;
-    padding: 0;
+/* Menu de Navegação */
+nav a {
+    color: white !important; /* Texto branco */
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+    color: white !important; /* Não muda a cor */
+    text-decoration: none;
+}
+
+/* Dropdown */
+.dropdown-toggle {
+    background-color: transparent; /* Sem fundo adicional */
+    color: white; /* Texto branco */
+    border: none; /* Remove borda */
+    padding: 8px 12px;
     font-size: 1rem;
+    cursor: pointer;
 }
 
-.navbar .dropdown-menu {
-    background-color: #24292f;
+.dropdown-toggle:hover,
+.dropdown-toggle:focus {
+    background-color: transparent; /* Sem mudança de fundo */
+    color: white; /* Sem mudança de cor */
     border: none;
-    margin: 0;
-    padding: 0;
 }
 
-.navbar .dropdown-item {
-    color: white;
+.dropdown-menu {
+    position: absolute; /* Lista aparece abaixo do botão */
+    background-color: #24292f; /* Fundo escuro */
+    border: none; /* Sem borda */
+    margin: 0; /* Sem margens adicionais */
+    padding: 0; /* Sem espaçamentos adicionais */
+    list-style: none; /* Remove marcadores */
+    display: none; /* Oculto por padrão */
+}
+
+.dropdown-menu.show {
+    display: block; /* Exibido apenas quando ativado */
+}
+
+.dropdown-item {
+    color: white; /* Texto branco */
     padding: 10px 15px;
     text-align: left;
+    cursor: pointer;
 }
 
-.navbar .dropdown-item:hover {
-    background-color: #444;
-    color: white;
+.dropdown-item:hover {
+    background-color: #24292f; /* Mantém o fundo escuro */
+    color: white; /* Mantém o texto branco */
 }
 
-/* Estilo específico para mobile */
-@media (max-width: 991.98px) {
-    .navbar .dropdown-toggle {
-        width: 100%;
-        text-align: center;
-    }
-
-    .navbar .dropdown-menu {
-        position: relative;
-    }
-}
-
-/* Botão Voltar ao Topo */
 #btnTopo {
     position: fixed;
     bottom: 30px;
@@ -93,3 +107,4 @@ header {
     background-color: #444;
     transform: scale(1.1);
 }
+

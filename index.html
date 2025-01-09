@@ -21,9 +21,9 @@
                     <li class="nav-item"><a class="nav-link" href="#implementazioni" data-lang="Implementazioni">Implementazioni</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contatti" data-lang="Contatti">Contatti</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn dropdown-toggle nav-link" type="button" id="languageDropdown" aria-expanded="false">
                             Lingua
-                        </a>
+                        </button>
                         <ul class="dropdown-menu" aria-labelledby="languageDropdown">
                             <li><a class="dropdown-item" onclick="setLanguage('it')">Italiano</a></li>
                             <li><a class="dropdown-item" onclick="setLanguage('pt-br')">Português do Brasil</a></li>
@@ -44,9 +44,7 @@
         <!-- Su di me -->
         <section id="su-di-me">
             <h2 class="text-center" data-lang="Su di me">Su di me</h2>
-            <p class="text-center" data-lang="Qui puoi raccontare la tua carriera professionale e i tuoi obiettivi.">
-                Sono un professionista con anni di esperienza nello sviluppo di software e gestione di progetti tecnologici. Amo creare soluzioni innovative che migliorano la vita delle persone.
-            </p>
+            <p class="text-center" data-lang="Qui puoi raccontare la tua carriera professionale e i tuoi obiettivi.">Qui puoi raccontare la tua carriera professionale e i tuoi obiettivi.</p>
         </section>
 
         <!-- Implementazioni -->
@@ -61,13 +59,14 @@
                             <p class="card-text" data-lang="Breve descrizione del progetto.">
                                 Applicazione web per organizzare attività quotidiane in modo semplice ed efficace.
                             </p>
+                            <!-- Video YouTube -->
                             <div class="ratio ratio-16x9">
                                 <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video di esempio 1" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
                 </div>
-
+        
                 <!-- Projeto 2 -->
                 <div class="col-md-6">
                     <div class="card mb-4">
@@ -76,13 +75,14 @@
                             <p class="card-text" data-lang="Breve descrizione del progetto.">
                                 Piattaforma di e-commerce personalizzata con funzionalità avanzate di ricerca.
                             </p>
+                            <!-- Video YouTube -->
                             <div class="ratio ratio-16x9">
                                 <iframe src="https://www.youtube.com/embed/3tmd-ClpJxA" title="Video di esempio 2" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
                 </div>
-
+        
                 <!-- Projeto 3 -->
                 <div class="col-md-6">
                     <div class="card mb-4">
@@ -91,13 +91,14 @@
                             <p class="card-text" data-lang="Breve descrizione del progetto.">
                                 Una app mobile per il monitoraggio della salute in tempo reale.
                             </p>
+                            <!-- Video YouTube -->
                             <div class="ratio ratio-16x9">
                                 <iframe src="https://www.youtube.com/embed/2Vv-BfVoq4g" title="Video di esempio 3" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
                 </div>
-
+        
                 <!-- Projeto 4 -->
                 <div class="col-md-6">
                     <div class="card mb-4">
@@ -106,6 +107,7 @@
                             <p class="card-text" data-lang="Breve descrizione del progetto.">
                                 Strumento per analizzare grandi set di dati e generare visualizzazioni intuitive.
                             </p>
+                            <!-- Video YouTube -->
                             <div class="ratio ratio-16x9">
                                 <iframe src="https://www.youtube.com/embed/oHg5SJYRHA0" title="Video di esempio 4" allowfullscreen></iframe>
                             </div>
@@ -114,13 +116,12 @@
                 </div>
             </div>
         </section>
+        
 
         <!-- Contatti -->
         <section id="contatti" class="text-center">
             <h2 data-lang="Contatti">Contatti</h2>
-            <p data-lang="Contattami via e-mail o visita il mio LinkedIn.">
-                Contattami via <a href="mailto:fake-email@example.com">e-mail</a> o visita il mio <a href="#">LinkedIn</a>.
-            </p>
+            <p data-lang="Contattami via e-mail o visita il mio LinkedIn.">Contattami via <a href="mailto:seu-email@example.com">e-mail</a> o visita il mio <a href="#">LinkedIn</a>.</p>
         </section>
     </main>
 
@@ -130,5 +131,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="scripts.js"></script>
+
+    <!-- Botão Voltar ao Topo -->
+    <button id="btnTopo" title="Voltar ao topo" onclick="voltarAoTopo()">&#8679;</button>
 </body>
 </html>
