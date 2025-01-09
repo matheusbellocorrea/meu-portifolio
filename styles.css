@@ -8,20 +8,18 @@ body {
     scroll-behavior: smooth; /* Rolar suavemente */
 }
 
+/* Header */
 header {
     background-color: #24292f; /* Fundo escuro */
     color: white;
+    text-align: center;
+    padding: 50px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 300px; /* Altura fixa para o cabeçalho */
-    text-align: center;
-    margin: 0; /* Remove margens adicionais */
-    padding: 0 20px; /* Espaçamento interno */
-    box-sizing: border-box;
+    min-height: 300px; /* Altura mínima */
 }
-
 
 /* Links */
 a {
@@ -43,36 +41,40 @@ nav a:hover {
     color: #58a6ff !important; /* Azul claro do GitHub */
 }
 
-/* Dropdown */
+/* Dropdown - Sem sombra cinza e estilo simples */
 .dropdown-toggle {
-    background-color: #6c757d; /* Cor cinza padrão do botão */
+    background-color: transparent;
     color: white;
     border: none;
     padding: 8px 12px;
-    border-radius: 5px; /* Arredondamento */
+    text-align: center;
 }
 
 .dropdown-toggle:hover,
 .dropdown-toggle:focus {
-    background-color: #5a6268; /* Escurece no hover/focus */
-    color: white;
+    background-color: #24292f;
+    color: #58a6ff;
+    border: none;
 }
 
 .dropdown-menu {
-    background-color: white; /* Fundo branco */
-    border: 1px solid #ccc; /* Borda clara */
-    border-radius: 5px; /* Arredondamento */
-    padding: 0; /* Remove espaçamento extra */
+    position: absolute;
+    background-color: #24292f; /* Fundo escuro como o menu */
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    box-shadow: none; /* Remove sombras */
 }
 
 .dropdown-item {
-    color: #24292f; /* Cor de texto escuro */
+    color: white; /* Branco como os outros itens do menu */
     padding: 10px 15px;
 }
 
 .dropdown-item:hover {
-    background-color: #f6f8fa; /* Fundo claro no hover */
-    color: #0366d6; /* Azul GitHub no hover */
+    background-color: #58a6ff; /* Azul claro no hover */
+    color: white;
 }
 
 /* Seções */
