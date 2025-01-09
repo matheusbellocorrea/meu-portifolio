@@ -12,15 +12,15 @@ body {
 header {
     background-color: #24292f; /* Fundo escuro */
     color: white;
-    text-align: center;
-    padding: 50px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 300px; /* Altura mínima */
-    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+    height: 300px; /* Altura fixa para o cabeçalho */
     text-align: center;
+    margin: 0; /* Remove margens adicionais */
+    padding: 0 20px; /* Adiciona espaçamento interno horizontal */
+    box-sizing: border-box; /* Inclui padding no tamanho total */
 }
 
 /* Links */
