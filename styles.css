@@ -41,40 +41,42 @@ nav a:hover {
     color: #58a6ff !important; /* Azul claro do GitHub */
 }
 
-/* Dropdown - Sem sombra cinza e estilo simples */
+/* Dropdown - Sem sombra e estilo integrado ao menu */
 .dropdown-toggle {
-    background-color: transparent;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    text-align: center;
+    background-color: transparent; /* Sem fundo, como os outros botões */
+    color: white; /* Texto branco */
+    border: none; /* Remove borda */
+    padding: 8px 12px; /* Espaçamento consistente */
+    font-size: 1rem;
 }
 
 .dropdown-toggle:hover,
 .dropdown-toggle:focus {
-    background-color: #24292f;
-    color: #58a6ff;
+    background-color: #24292f; /* Fundo igual ao menu no hover */
+    color: #58a6ff; /* Azul claro no hover */
     border: none;
 }
 
 .dropdown-menu {
-    position: absolute;
-    background-color: #24292f; /* Fundo escuro como o menu */
-    border: none;
-    border-radius: 0;
+    position: absolute; /* Aparece logo abaixo do botão */
+    background-color: #24292f; /* Fundo escuro */
+    border: none; /* Remove bordas */
     padding: 0;
     margin: 0;
-    box-shadow: none; /* Remove sombras */
+    box-shadow: none; /* Remove sombra */
+    display: block; /* Garante exibição consistente */
+    width: auto; /* Tamanho adaptado ao conteúdo */
 }
 
 .dropdown-item {
-    color: white; /* Branco como os outros itens do menu */
+    color: white; /* Branco como os outros links do menu */
     padding: 10px 15px;
+    text-align: left; /* Alinha o texto à esquerda */
 }
 
 .dropdown-item:hover {
-    background-color: #58a6ff; /* Azul claro no hover */
-    color: white;
+    background-color: #58a6ff; /* Fundo azul claro no hover */
+    color: white; /* Texto branco */
 }
 
 /* Seções */
