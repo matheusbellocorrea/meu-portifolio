@@ -1,0 +1,46 @@
+/* Estilos Globais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f8fa; /* Fundo claro */
+    color: #24292f; /* Texto escuro */
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; /* Rolar suavemente */
+}
+
+/* Header */
+header {
+    background-color: #24292f; /* Fundo escuro */
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px; /* Altura mínima */
+}
+
+/* Menu de Navegação */
+nav a {
+    color: white !important;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #58a6ff !important; /* Azul do GitHub */
+}
+
+/* Seções */
+section {
+    margin-bottom: 50px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #24292f;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
