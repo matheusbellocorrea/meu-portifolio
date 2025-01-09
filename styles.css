@@ -19,6 +19,8 @@ header {
     justify-content: center;
     align-items: center;
     min-height: 300px; /* Altura mínima */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+    text-align: center;
 }
 
 /* Links */
