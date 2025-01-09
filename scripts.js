@@ -23,9 +23,12 @@ const translations = {
     }
 };
 
+// Controle do Dropdown de Idioma
 document.getElementById('languageDropdown').addEventListener('click', function () {
     const dropdownMenu = this.nextElementSibling;
-    dropdownMenu.classList.toggle('show'); // Alterna a visibilidade
+
+    // Alterna a visibilidade da lista de idiomas
+    dropdownMenu.classList.toggle('show');
 });
 
 function setLanguage(lang) {

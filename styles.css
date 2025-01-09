@@ -41,40 +41,58 @@ nav a:hover {
     text-decoration: underline; /* Mantém apenas o sublinhado no hover */
 }
 
-/* Dropdown */
+/* Dropdown - Corrigido */
 .dropdown-toggle {
-    background-color: transparent; /* Sem fundo */
+    background-color: transparent; /* Sem fundo adicional */
     color: white; /* Texto branco */
     border: none; /* Remove borda */
-    padding: 8px 12px; /* Espaçamento consistente */
+    padding: 8px 12px;
     font-size: 1rem;
-    cursor: pointer; /* Aponta como clicável */
+    cursor: pointer;
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle:focus {
+    background-color: transparent; /* Mantém o fundo transparente */
+    color: white; /* Mantém o texto branco */
+    border: none;
 }
 
 .dropdown-menu {
-    position: absolute; /* Lista aparece abaixo do botão */
+    position: absolute; /* Aparece abaixo do botão */
     background-color: #24292f; /* Fundo escuro */
-    border: none; /* Remove bordas */
+    border: none; /* Sem borda */
     margin: 0; /* Sem margens adicionais */
-    padding: 0; /* Sem espaçamentos adicionais */
+    padding: 0;
     list-style: none; /* Remove marcadores */
-    display: none; /* Escondido por padrão */
+    display: none; /* Oculto por padrão */
 }
 
 .dropdown-menu.show {
-    display: block; /* Exibido quando ativo */
+    display: block; /* Exibido apenas quando ativado */
 }
 
 .dropdown-item {
     color: white; /* Texto branco */
-    padding: 10px 15px; /* Espaçamento consistente */
-    text-align: left; /* Texto alinhado à esquerda */
-    cursor: pointer; /* Aponta como clicável */
+    padding: 10px 15px;
+    text-align: left;
+    cursor: pointer;
 }
 
 .dropdown-item:hover {
-    background-color: #3a3a3a; /* Fundo levemente mais claro no hover */
-    color: white; /* Texto branco no hover */
+    background-color: #24292f; /* Mantém o fundo escuro */
+    color: white; /* Mantém o texto branco */
+}
+
+/* Links do menu de navegação */
+nav a {
+    color: white !important; /* Texto branco */
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: white !important; /* Sem mudança no hover */
+    text-decoration: none;
 }
 
 /* Seções */
