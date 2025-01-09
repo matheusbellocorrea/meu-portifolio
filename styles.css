@@ -1,8 +1,51 @@
-/* Dropdown - Corrigir aparência */
+/* Estilos Globais */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f6f8fa; /* Fundo claro */
+    color: #24292f; /* Texto escuro */
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; /* Rolar suavemente */
+}
+
+/* Header */
+header {
+    background-color: #24292f; /* Fundo escuro */
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px; /* Altura mínima */
+}
+
+/* Links */
+a {
+    color: inherit; /* Usa a cor do texto atual */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Menu de Navegação */
+nav a {
+    color: white !important;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #58a6ff !important; /* Azul claro do GitHub */
+}
+
+/* Dropdown */
 .dropdown-toggle {
     background-color: #6c757d; /* Cor cinza padrão do botão */
-    color: white; /* Texto branco */
-    border: none; /* Remove a borda padrão */
+    color: white;
+    border: none;
     padding: 8px 12px;
     border-radius: 5px; /* Arredondamento */
 }
@@ -28,4 +71,18 @@
 .dropdown-item:hover {
     background-color: #f6f8fa; /* Fundo claro no hover */
     color: #0366d6; /* Azul GitHub no hover */
+}
+
+/* Seções */
+section {
+    margin-bottom: 50px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #24292f;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
 }

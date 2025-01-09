@@ -6,7 +6,6 @@ const translations = {
         'Qui puoi raccontare la tua carriera professionale e i tuoi obiettivi.': 'Qui puoi raccontare la tua carriera professionale e i tuoi obiettivi.',
         'Le mie Implementazioni': 'Le mie Implementazioni',
         'Breve descrizione del progetto.': 'Breve descrizione del progetto.',
-        'Scopri di più': 'Scopri di più',
         'Contatti': 'Contatti',
         'Contattami via e-mail o visita il mio LinkedIn.': 'Contattami via e-mail o visita il mio LinkedIn.',
         'Tutti i diritti riservati.': 'Tutti i diritti riservati.'
@@ -18,7 +17,6 @@ const translations = {
         'Qui puoi raccontare la tua carriera professionale e i tuoi obiettivi.': 'Aqui você pode contar sua trajetória profissional e seus objetivos.',
         'Le mie Implementazioni': 'Minhas Implementações',
         'Breve descrizione del progetto.': 'Descrição breve do projeto.',
-        'Scopri di più': 'Ver Mais',
         'Contatti': 'Contato',
         'Contattami via e-mail o visita il mio LinkedIn.': 'Entre em contato por e-mail ou visite meu LinkedIn.',
         'Tutti i diritti riservati.': 'Todos os direitos reservados.'
