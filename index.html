@@ -8,10 +8,11 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f6f8fa; /* Fundo claro do GitHub */
+            color: #24292f; /* Texto escuro do GitHub */
         }
         header {
-            background: url('https://via.placeholder.com/1920x600') no-repeat center center;
-            background-size: cover;
+            background-color: #24292f; /* Fundo do cabeçalho */
             color: white;
             text-align: center;
             padding: 50px 0;
@@ -19,18 +20,51 @@
         header h1 {
             font-size: 3rem;
         }
-        section {
-            margin-bottom: 50px;
+        nav {
+            background-color: #24292f; /* Fundo do menu */
+        }
+        nav a {
+            color: white !important;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        nav a:hover {
+            color: #58a6ff !important; /* Azul do GitHub */
         }
         footer {
-            background-color: #333;
+            background-color: #24292f;
             color: white;
             text-align: center;
             padding: 20px 0;
+            margin-top: 50px;
+        }
+        section {
+            margin-bottom: 50px;
+        }
+        .smooth-scroll {
+            scroll-behavior: smooth;
         }
     </style>
 </head>
-<body>
+<body class="smooth-scroll">
+    <!-- Menu de Navegação -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">Meu Portfólio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Mim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#implementacoes">Implementações</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cabeçalho -->
     <header>
         <h1>Meu Portfólio</h1>
         <p>Bem-vindo ao meu espaço profissional</p>
@@ -78,5 +112,7 @@
     <footer>
         <p>&copy; 2025 Seu Nome. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
