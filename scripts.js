@@ -5,7 +5,7 @@ const translations = {
         'Su di me': 'Su di me',
         'Qui puoi raccontare la tua carriera professionale e i tuoi obiettivi.': 'Qui puoi raccontare la tua carriera professionale e i tuoi obiettivi.',
         'Le mie Implementazioni': 'Le mie Implementazioni',
-        'Breve descrizione del progetto.': 'Breve descrizione del projeto.',
+        'Breve descrizione del progetto.': 'Breve descrizione del progetto.',
         'Contatti': 'Contatti',
         'Contattami via e-mail o visita il mio LinkedIn.': 'Contattami via e-mail o visita il mio LinkedIn.',
         'Tutti i diritti riservati.': 'Tutti i diritti riservati.'
@@ -31,22 +31,13 @@ document.getElementById('languageDropdown').addEventListener('click', function (
     dropdownMenu.classList.toggle('show');
 });
 
-function setLanguage(lang) {
-    document.querySelectorAll('[data-lang]').forEach(el => {
-        const key = el.getAttribute('data-lang');
-        if (translations[lang] && translations[lang][key]) {
-            el.innerText = translations[lang][key];
-        }
-    });
-}
-
-// Mostra o botão "Voltar ao Topo" quando a página for rolada para baixo
+// Controle do Botão "Voltar ao Topo"
 window.onscroll = function () {
-    const btnTopo = document.getElementById("btnTopo");
+    const btnTopo = document.getElementById('btnTopo');
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-        btnTopo.style.display = "block"; // Exibe o botão
+        btnTopo.style.display = 'block'; // Exibe o botão
     } else {
-        btnTopo.style.display = "none"; // Esconde o botão
+        btnTopo.style.display = 'none'; // Esconde o botão
     }
 };
 
@@ -54,6 +45,6 @@ window.onscroll = function () {
 function voltarAoTopo() {
     window.scrollTo({
         top: 0,
-        behavior: "smooth", // Rolagem suave
+        behavior: 'smooth' // Rolagem suave
     });
 }
