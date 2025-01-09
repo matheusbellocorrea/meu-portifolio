@@ -28,7 +28,7 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none; /* Sem sublinhado no hover */
 }
 
 /* Menu de Navegação */
@@ -37,11 +37,13 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover {
-    text-decoration: underline; /* Mantém apenas o sublinhado no hover */
+nav a:hover,
+nav a:focus {
+    color: white !important; /* Não muda a cor */
+    text-decoration: none;
 }
 
-/* Dropdown - Corrigido */
+/* Dropdown */
 .dropdown-toggle {
     background-color: transparent; /* Sem fundo adicional */
     color: white; /* Texto branco */
@@ -53,17 +55,17 @@ nav a:hover {
 
 .dropdown-toggle:hover,
 .dropdown-toggle:focus {
-    background-color: transparent; /* Mantém o fundo transparente */
-    color: white; /* Mantém o texto branco */
+    background-color: transparent; /* Sem mudança de fundo */
+    color: white; /* Sem mudança de cor */
     border: none;
 }
 
 .dropdown-menu {
-    position: absolute; /* Aparece abaixo do botão */
+    position: absolute; /* Lista aparece abaixo do botão */
     background-color: #24292f; /* Fundo escuro */
     border: none; /* Sem borda */
     margin: 0; /* Sem margens adicionais */
-    padding: 0;
+    padding: 0; /* Sem espaçamentos adicionais */
     list-style: none; /* Remove marcadores */
     display: none; /* Oculto por padrão */
 }
@@ -82,29 +84,4 @@ nav a:hover {
 .dropdown-item:hover {
     background-color: #24292f; /* Mantém o fundo escuro */
     color: white; /* Mantém o texto branco */
-}
-
-/* Links do menu de navegação */
-nav a {
-    color: white !important; /* Texto branco */
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: white !important; /* Sem mudança no hover */
-    text-decoration: none;
-}
-
-/* Seções */
-section {
-    margin-bottom: 50px;
-}
-
-/* Rodapé */
-footer {
-    background-color: #24292f;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 0.9rem;
 }
