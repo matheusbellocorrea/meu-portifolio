@@ -57,3 +57,13 @@ function voltarAoTopo() {
         behavior: 'smooth'
     });
 }
+
+// Função para mudar o idioma com base no botão clicado
+function setLanguage(lang) {
+    document.querySelectorAll('[data-lang]').forEach(el => {
+        const key = el.getAttribute('data-lang');
+        if (translations[lang] && translations[lang][key]) {
+            el.innerText = translations[lang][key];
+        }
+    });
+}
