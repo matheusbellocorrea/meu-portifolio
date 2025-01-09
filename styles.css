@@ -105,6 +105,7 @@ nav a:focus {
 }
 
 #btnTopo:hover {
-    background-color: #444; /* Fica um pouco mais claro no hover */
-    transform: scale(1.1); /* Leve aumento no hover */
+    background-color: #444; /* Fundo um pouco mais claro ao passar o mouse */
+    transform: scale(1.1); /* Leve aumento ao passar o mouse */
 }
+

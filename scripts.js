@@ -40,9 +40,6 @@ function setLanguage(lang) {
     });
 }
 
-// Define o idioma padrão como Italiano
-setLanguage('it');
-
 // Mostra o botão "Voltar ao Topo" quando a página for rolada para baixo
 window.onscroll = function () {
     const btnTopo = document.getElementById("btnTopo");
