@@ -23,7 +23,7 @@ header {
 
 /* Imagem do Banner */
 .header-banner {
-   
+    width: 100%; /* Ocupa toda a largura do header */
     height: auto; /* Ajusta automaticamente a altura */
     max-height: none; /* Remove o limite da altura */
     object-fit: cover; /* Garante que o banner preencha o espaço sem distorção */
