@@ -10,30 +10,31 @@ body {
 
 /* Header */
 header {
+    background-color: #24292f; /* Fundo escuro */
+    color: white;
+    text-align: center;
+    padding: 50px 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%; /* Ocupa toda a largura da página */
-    height: 100vh; /* Ajusta à altura da janela visível */
-    margin: 0;
-    padding: 0;
-    background-color: #24292f; /* Fundo de segurança */
-    overflow: hidden; /* Garante que não haja scroll desnecessário */
+    min-height: 300px; /* Altura mínima */
 }
 
 /* Imagem do Banner */
 .header-banner {
-    width: 100%; /* Largura total */
-    height: auto; /* Altura ajustada proporcionalmente */
-    max-height: 100vh; /* Limita a altura ao tamanho da tela */
-    position: absolute; /* Permite que ela flua junto com o redimensionamento */
+   
+    height: auto; /* Ajusta automaticamente a altura */
+    max-height: none; /* Remove o limite da altura */
+    object-fit: cover; /* Garante que o banner preencha o espaço sem distorção */
+    margin-bottom: 0; /* Remove o espaçamento extra abaixo, se necessário */
 }
 
-/* Responsividade */
+/* Responsividade para ajustar em telas menores */
 @media (max-width: 768px) {
     .header-banner {
-        width: 100%; /* Mantém largura total */
-        height: auto; /* Altura ajustada proporcionalmente */
+        height: 300px; /* Altura fixa para dispositivos menores */
+        object-fit: contain; /* Mostra a imagem inteira, ajustando conforme necessário */
     }
 }
 
@@ -123,3 +124,4 @@ nav a:focus {
     background-color: #444;
     transform: scale(1.1);
 }
+
