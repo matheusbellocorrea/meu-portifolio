@@ -21,6 +21,14 @@ header {
     min-height: 300px; /* Altura mínima */
 }
 
+/* Imagem do Banner */
+.header-banner {
+    width: 100%; /* Ocupa toda a largura do header */
+    max-height: 300px; /* Define uma altura máxima */
+    object-fit: cover; /* Ajusta o conteúdo sem distorcer */
+    margin-bottom: 20px; /* Espaçamento abaixo da imagem */
+}
+
 /* Links */
 a {
     color: inherit; /* Usa a cor do texto atual */
