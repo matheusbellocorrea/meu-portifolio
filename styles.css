@@ -28,17 +28,20 @@ header {
     max-height: 100vh; /* Limita a altura para não ultrapassar a altura da tela */
     object-fit: contain; /* Garante que a imagem seja exibida inteira sem distorções */
     margin: 0; /* Remove margens */
+    transition: all 0.3s ease; /* Suaviza ajustes dinâmicos */
 }
 
 /* Caso esteja usando background-image */
 .header-banner-bg {
     width: 100%; /* Ocupa toda a largura da tela */
-    height: 100vh; /* Adapta a altura à resolução da tela */
+    height: auto; /* Ajusta a altura dinamicamente */
+    min-height: 300px; /* Define uma altura mínima */
     background-image: url('seu-banner.jpg'); /* Caminho da imagem */
     background-size: cover; /* Ajusta para preencher toda a área disponível */
-    background-position: center; /* Centraliza a imagem no espaço */
+    background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita repetição */
     margin: 0; /* Remove margens */
+    transition: all 0.3s ease; /* Suaviza ajustes dinâmicos */
 }
 
 /* Responsividade para dispositivos menores */
@@ -48,7 +51,6 @@ header {
         max-height: 70vh; /* Define um limite para telas menores */
     }
 }
-
 
 /* Links */
 a {
@@ -136,4 +138,3 @@ nav a:focus {
     background-color: #444;
     transform: scale(1.1);
 }
-
