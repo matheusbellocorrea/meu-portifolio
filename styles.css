@@ -21,31 +21,34 @@ header {
     min-height: 300px; /* Altura mínima */
 }
 
-/* Configuração do banner responsivo */
+/* Configuração do banner responsivo com ajuste dinâmico */
 .header-banner {
     width: 100%; /* Ocupa toda a largura do container */
-    height: 100vh; /* Ocupa 100% da altura da tela do dispositivo */
-    object-fit: contain; /* Mostra a imagem inteira sem distorções */
-    margin: 0; /* Remove margens ao redor da imagem */
+    height: auto; /* Ajusta a altura automaticamente para manter as proporções */
+    max-height: 100vh; /* Limita a altura para não ultrapassar a altura da tela */
+    object-fit: contain; /* Garante que a imagem seja exibida inteira sem distorções */
+    margin: 0; /* Remove margens */
 }
 
 /* Caso esteja usando background-image */
 .header-banner-bg {
-    width: 100%; /* Ocupa toda a largura do container */
-    height: 100vh; /* Ocupa 100% da altura da tela */
+    width: 100%; /* Ocupa toda a largura da tela */
+    height: 100vh; /* Adapta a altura à resolução da tela */
     background-image: url('seu-banner.jpg'); /* Caminho da imagem */
-    background-size: contain; /* Ajusta a imagem para caber integralmente */
-    background-position: center; /* Centraliza a imagem */
+    background-size: cover; /* Ajusta para preencher toda a área disponível */
+    background-position: center; /* Centraliza a imagem no espaço */
     background-repeat: no-repeat; /* Evita repetição */
     margin: 0; /* Remove margens */
 }
 
-/* Responsividade opcional para telas menores */
+/* Responsividade para dispositivos menores */
 @media (max-width: 768px) {
     .header-banner, .header-banner-bg {
-        height: 70vh; /* Ajusta a altura para telas menores */
+        height: auto; /* Permite altura automática em dispositivos menores */
+        max-height: 70vh; /* Define um limite para telas menores */
     }
 }
+
 
 /* Links */
 a {
