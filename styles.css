@@ -8,31 +8,44 @@ body {
     scroll-behavior: smooth; /* Rolar suavemente */
 }
 
-/* Configuração do banner responsivo */
+/* Header */
+header {
+    background-color: #24292f; /* Fundo escuro */
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px; /* Altura mínima */
+}
+
+/* Configuração do banner responsivo com ajuste dinâmico */
 .header-banner {
     width: 100%; /* Ocupa toda a largura do container */
-    height: calc(100vh - 50px); /* Ajusta a altura proporcional à altura da tela, considerando o padding */
-    object-fit: cover; /* Garante que a imagem preencha todo o espaço disponível */
+    height: auto; /* Ajusta a altura automaticamente para manter as proporções */
+    max-height: 100vh; /* Limita a altura para não ultrapassar a altura da tela */
+    object-fit: contain; /* Garante que a imagem seja exibida inteira sem distorções */
     margin: 0; /* Remove margens */
-    transition: height 0.3s ease, width 0.3s ease; /* Suaviza redimensionamentos */
 }
 
 /* Caso esteja usando background-image */
 .header-banner-bg {
-    width: 100%; /* Ocupa toda a largura */
-    height: calc(100vh - 50px); /* Ajusta a altura à tela, considerando o padding */
+    width: 100%; /* Ocupa toda a largura da tela */
+    height: 100vh; /* Adapta a altura à resolução da tela */
     background-image: url('seu-banner.jpg'); /* Caminho da imagem */
-    background-size: cover; /* Preenche o espaço sem distorcer */
-    background-position: center; /* Centraliza a imagem */
+    background-size: cover; /* Ajusta para preencher toda a área disponível */
+    background-position: center; /* Centraliza a imagem no espaço */
     background-repeat: no-repeat; /* Evita repetição */
     margin: 0; /* Remove margens */
-    transition: height 0.3s ease, width 0.3s ease; /* Suaviza redimensionamentos */
 }
 
 /* Responsividade para dispositivos menores */
 @media (max-width: 768px) {
     .header-banner, .header-banner-bg {
-        height: 70vh; /* Ajusta a altura para telas menores */
+        height: auto; /* Permite altura automática em dispositivos menores */
+        max-height: 70vh; /* Define um limite para telas menores */
     }
 }
 
