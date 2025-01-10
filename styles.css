@@ -24,9 +24,18 @@ header {
 /* Imagem do Banner */
 .header-banner {
     width: 100%; /* Ocupa toda a largura do header */
-    max-height: 300px; /* Define uma altura máxima */
-    object-fit: cover; /* Ajusta o conteúdo sem distorcer */
-    margin-bottom: 30px; /* Espaçamento abaixo da imagem */
+    height: auto; /* Ajusta automaticamente a altura */
+    max-height: none; /* Remove o limite da altura */
+    object-fit: cover; /* Garante que o banner preencha o espaço sem distorção */
+    margin-bottom: 0; /* Remove o espaçamento extra abaixo, se necessário */
+}
+
+/* Responsividade para ajustar em telas menores */
+@media (max-width: 768px) {
+    .header-banner {
+        height: 300px; /* Altura fixa para dispositivos menores */
+        object-fit: contain; /* Mostra a imagem inteira, ajustando conforme necessário */
+    }
 }
 
 /* Links */
