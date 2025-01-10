@@ -26,7 +26,7 @@ header {
     width: 100%; /* Ocupa toda a largura do header */
     max-height: 300px; /* Define uma altura máxima */
     object-fit: cover; /* Ajusta o conteúdo sem distorcer */
-    margin-bottom: 20px; /* Espaçamento abaixo da imagem */
+    margin-bottom: 30px; /* Espaçamento abaixo da imagem */
 }
 
 /* Links */
