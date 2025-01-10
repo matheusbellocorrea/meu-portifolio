@@ -21,20 +21,28 @@ header {
     min-height: 300px; /* Altura mínima */
 }
 
-/* Imagem do Banner */
+/* Banner como imagem completa (usando <img>) */
 .header-banner {
-    width: 100%; /* Ocupa toda a largura do header */
-    height: auto; /* Ajusta automaticamente a altura */
-    max-height: none; /* Remove o limite da altura */
-    object-fit: cover; /* Garante que o banner preencha o espaço sem distorção */
-    margin-bottom: 0; /* Remove o espaçamento extra abaixo, se necessário */
+    width: 100%; /* Ocupa toda a largura do container */
+    height: auto; /* Ajusta a altura automaticamente, mantendo as proporções */
+    margin-bottom: 30px; /* Espaçamento abaixo do banner */
 }
 
-/* Responsividade para ajustar em telas menores */
+/* Caso o banner seja um background-image */
+.header-banner-bg {
+    width: 100%; /* Ocupa toda a largura do header */
+    height: auto; /* Ajusta a altura automaticamente */
+    min-height: 300px; /* Altura mínima para garantir visibilidade */
+    background-image: url('seu-banner.jpg'); /* Caminho da imagem */
+    background-size: contain; /* Mostra a imagem inteira, sem cortes */
+    background-position: center; /* Centraliza a imagem no espaço */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+}
+
+/* Responsividade para dispositivos menores */
 @media (max-width: 768px) {
-    .header-banner {
-        height: 300px; /* Altura fixa para dispositivos menores */
-        object-fit: contain; /* Mostra a imagem inteira, ajustando conforme necessário */
+    .header-banner, .header-banner-bg {
+        min-height: 200px; /* Reduz a altura mínima para telas pequenas */
     }
 }
 
