@@ -82,3 +82,144 @@ nav a:focus {
     background-color: #444; /* Fundo mais claro ao passar o mouse */
     transform: scale(1.1); /* Leve aumento no hover */
 }
+
+
+/* Sezione Contatti */
+#contatti {
+    background-color: #f6f8fa; /* Fundo claro */
+    color: #24292f; /* Texto escuro */
+    padding: 50px 20px; /* Padding consistente */
+    margin-top: 30px; /* Espaçamento superior */
+    border-top: 1px solid #e1e4e8; /* Linha divisória sutil */
+}
+
+#contatti h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#contatti p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+#contatti ul {
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#contatti ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+}
+
+#contatti ul li::before {
+    content: "✔"; /* Ícone de marcador */
+    position: absolute;
+    left: 0;
+    color: #0a66c2; /* Azul para destacar */
+    font-weight: bold;
+}
+
+/* Botões de Contato */
+.btn-linkedin,
+.btn-email {
+    display: block; /* Ambos ocupam toda a largura disponível */
+    width: 100%; /* Largura adaptativa */
+    max-width: 600px; /* Ajuste para o tamanho do botão do LinkedIn na imagem */
+    background-color: #0a66c2; /* Azul para LinkedIn */
+    color: white; /* Cor do texto */
+    font-size: 1.2rem; /* Fonte maior para destacar */
+    font-weight: bold;
+    padding: 15px 20px; /* Ajuste do espaçamento interno */
+    text-decoration: none; /* Remove sublinhado (aplicado ao LinkedIn) */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-align: center; /* Texto centralizado */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 10px auto; /* Espaçamento entre os botões e centralização */
+}
+
+.btn-linkedin:hover {
+    background-color: #004182; /* Azul mais escuro no hover */
+}
+
+.btn-email {
+    background-color: #24292f; /* Fundo escuro */
+    border: none; /* Remove borda do botão */
+    cursor: pointer; /* Cursor de link */
+}
+
+.btn-email:hover {
+    background-color: #444; /* Fundo mais claro no hover */
+}
+
+#email-copiato {
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(10, 10, 10);
+    margin-top: 10px;
+    animation: fade-in-out 2s ease-in-out;
+}
+
+@keyframes fade-in-out {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+#su-di-me {
+    background-color: #f6f8fa; /* Fundo claro */
+    color: #24292f; /* Texto escuro */
+    padding: 50px 0;
+}
+
+#su-di-me h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #24292f;
+}
+
+#su-di-me p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+#su-di-me ul {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+#su-di-me ul li {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+#su-di-me ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #24292f;
+    font-weight: bold;
+}

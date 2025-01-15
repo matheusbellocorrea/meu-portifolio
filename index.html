@@ -41,9 +41,31 @@
 
     <main class="container my-5">
         <!-- Su di me -->
-        <section id="su-di-me">
-            <h2 class="text-center" data-lang="Su di me">Su di me</h2>
-            <p class="text-center" data-lang="Qui puoi raccontare la tua carriera professionale e i tuoi obiettivi.">Qui puoi raccontare la tua carriera professionale e i tuoi obiettivi.</p>
+        <section id="su-di-me" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">Su di me</h2>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="list-unstyled">
+                            <strong>Professionista IT</strong> con oltre 15 anni di esperienza nell'automazione dei processi aziendali, 
+                            analisi dei dati e sviluppo di soluzioni su misura. Specializzato nell'utilizzo di tecnologie avanzate come 
+                            <strong>Python, UiPath, AutoIt e VBA</strong>, con un forte focus sull'efficienza operativa e sull'innovazione 
+                            tecnologica. Esperto nella gestione e integrazione di database relazionali (<strong>PostgreSQL, MySQL, Sybase, SQLite</strong>) 
+                            e nello sviluppo di soluzioni <strong>RPA</strong> per ottimizzare i flussi di lavoro.
+                        </p>
+                        <p class="list-unstyled">
+                            Ho collaborato con aziende internazionali per creare strumenti personalizzati che migliorano la produttività e 
+                            l'affidabilità dei sistemi aziendali. Tra i miei principali successi, vi sono lo sviluppo di <strong>dashboard interattive</strong>, 
+                            la creazione di automazioni su misura e la formazione tecnica per utenti finali.
+                        </p>
+                        <ul class="list-unstyled">
+                            <li><strong>Competenze chiave:</strong> Python, RPA, SQL, Power BI, UiPath</li>
+                            <li><strong>Strumenti:</strong> Excel avanzato, Trello, Git, Notion</li>
+                            <li><strong>Abilità:</strong> Automazione dei processi, analisi dei dati, migrazione e integrazione di sistemi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Implementazioni -->
@@ -118,14 +140,41 @@
         
 
         <!-- Contatti -->
-        <section id="contatti" class="text-center">
-            <h2 data-lang="Contatti">Contatti</h2>
-            <p data-lang="Contattami via e-mail o visita il mio LinkedIn.">Contattami via <a href="mailto:seu-email@example.com">e-mail</a> o visita il mio <a href="#">LinkedIn</a>.</p>
+        <!-- Sezione di Contatto -->
+        <section id="contatti" class="text-center py-5">
+            <div class="container">
+                <h2>Contatti</h2>
+                <p>Sei interessato a collaborare o hai domande? Sono felice di connettermi con te!</p>
+                <div class="row justify-content-center mt-4">
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <div class="contact-icons">
+                                <!-- Botão LinkedIn -->
+                                <a href="https://www.linkedin.com/in/matheusbellocorrea/" target="_blank" class="btn-linkedin">
+                                    Connettiti su LinkedIn
+                                </a>
+                            
+                                <!-- Botão E-mail -->
+                                <button onclick="copiarEmail()" class="btn-email">
+                                    Copia il mio e-mail
+                                </button>
+                            </div>
+                            <p id="email-copiato" style="display: none; color: rgb(12, 12, 12); margin-top: 10px;">E-mail copiato!</p>
+                            
+                            
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
+        
+
     </main>
 
     <footer class="text-center bg-dark text-white py-3">
-        <p data-lang="Tutti i diritti riservati.">&copy; 2025 Il tuo Nome. Tutti i diritti riservati.</p>
+        <p data-lang="Tutti i diritti riservati.">&copy; 2025 Matheus Bello Correa. Tutti i diritti riservati.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
